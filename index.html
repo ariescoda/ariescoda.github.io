@@ -1,1 +1,16 @@
-
+<head>
+  <script type="text/javascript">
+    function timesFunction() {
+      var firstNum = Math.floor(Math.random()*16);
+      var secondNum = Math.floor(Math.random()*16);
+      var equation = firstNum + "x" + secondNum;
+      var answer = firstNum + "x" + secondNum + "=" + firstNum*secondNum;
+      document.getElementById("times").innerHTML = equation
+      setTimeout(function timesItLater() {
+      document.getElementById("times").innerHTML = answer; }, 2500);
+    }
+  </script>
+</head>
+<body>
+  <div id="times" onclick="timesFunction()">Click me if you want to get smarter!!</div>
+</body>
